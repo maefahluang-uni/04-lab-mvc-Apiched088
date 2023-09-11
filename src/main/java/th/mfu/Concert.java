@@ -9,7 +9,7 @@ public class Concert {
     private String title;
     private String performer;
     private Date date;
-    private String location;
+
     private String description;
 
     public Concert() {
@@ -19,7 +19,31 @@ public class Concert {
         this.title = title;
         this.description = description;
     }
- 
+
+    public int getId() {
+        return id;
+    }
+    public void setId(int id) {
+        this.id = id;
+    }
+    public void setTitle(String title) {
+        this.title = title;
+    }
+    public String getPerformer() {
+        return performer;
+    }
+    public void setPerformer(String performer) {
+        this.performer = performer;
+    }
+    public Date getDate() {
+        return date;
+    }
+    public void setDate(Date date) {
+        this.date = date;
+    }
+    public void setDescription(String description) {
+        this.description = description;
+    }
     public String getTitle() {
         //TODO: return title
         return title;
@@ -28,13 +52,9 @@ public class Concert {
         //TODO: return description
         return description;
     }
+    
 
     //TODO: add getters and setters
-    public int getId() {
-        return id;
-    }
-    public void setId(int id) {
-        this.id = id;
-    }
+    
 
 }
